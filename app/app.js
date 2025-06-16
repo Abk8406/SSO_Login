@@ -9,9 +9,9 @@ const app = express();
 // Environment variables with fallbacks
 const PORT = process.env.PORT || 3000;
 const SESSION_SECRET = process.env.SESSION_SECRET || 'your-session-secret';
-const CLIENT_ID = process.env.CLIENT_ID || '2b7c87d3-1a85-4720-be46-d24ab10df18a';
+const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET || 'YOUR_CLIENT_SECRET';
-const TENANT_ID = process.env.TENANT_ID || '7cc91c38-648e-4ce2-a4e4-517ae39fc189';
+const TENANT_ID = process.env.TENANT_ID ;
 const CALLBACK_URL = process.env.CALLBACK_URL || 'http://localhost:3000/auth/callback';
 
 // Azure AD Configuration
